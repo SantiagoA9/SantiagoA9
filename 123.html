@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu horizontal desplegable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif; /* Fuente para todo el cuerpo */
+            font-size: 15px;
+            background-color: #2bd4bd;
+        }
+
+        /* Estilos para centrar el h2 */
+        h2 {
+            text-align: center;
+            font-family: 'Arial Black', sans-serif; /* Nueva fuente para h2 */
+        }
+
+        /* Estilos para los colores de la Unidad Educativa */
+        .unidad-educativa {
+            text-align: center; /* Centrar el texto completo */
+            font-size: 2em; /* Puedes ajustar el tamaño si lo necesitas */
+            font-weight: bold;
+            margin-bottom: 10px; /* Espacio entre el nombre de la unidad y el proyecto */
+            font-family: 'Arial Black', sans-serif; /* Nueva fuente para Unidad Educativa */
+        }
+
+        .unidad-educativa .verde {
+            color: green;
+        }
+
+        .unidad-educativa .amarillo {
+            color: yellow;
+        }
+
+        .unidad-educativa .rojo {
+            color: red;
+        }
+
+        .unidad-educativa .azul {
+            color: blue;
+        }
+
+        .unidad-educativa .morado {
+            color: purple;
+        }
+
+        /* Estilo para el texto "Samuel Velasco 3ro M" a la izquierda */
+        .info-estudiante {
+            text-align: left;
+            margin-top: 10px; /* Espacio superior para separarlo si es necesario */
+            font-size: 1.2em; /* Ajusta el tamaño si lo deseas */
+            font-weight: bold;
+            color: black; /* Color del texto */
+            padding-left: 20px; /* Un poco de margen a la izquierda */
+            font-family: Verdana, sans-serif; /* Nueva fuente para este texto */
+        }
+
+        /* Modificaciones para el contenedor de imágenes */
+        .contenedor {
+            display: flex; /* Convierte el contenedor en un flex container */
+            justify-content: space-between; /* Distribuye el espacio entre los elementos */
+            align-items: center; /* Alinea los elementos verticalmente al centro */
+            width: 90%; /* Ajusta el ancho para que quepan bien las imágenes y los espacios */
+            margin: 0 auto; /* Centra el contenedor completo */
+            margin-top: 20px; /* Un poco de espacio arriba */
+        }
+
+        .contenedor img {
+            max-width: 20%; /* ¡AJUSTADO A 20% PARA HACERLAS MÁS PEQUEÑAS! */
+            height: auto;
+        }
+
+        .menu-wrapper ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .principal-menu > li {
+            display: inline-block;
+        }
+
+        .principal-menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            width: 100px;
+            font-size: 12px; /* Texto más pequeño */
+            font-family: 'Arial Black', sans-serif; /* Nueva fuente para los elementos del menú principal */
+        }
+
+        li ul {
+            position: absolute;
+            display: none;
+        }
+
+        .sub-menu a {
+            display: block;
+            padding: 15px 20px;
+            width: 330px;
+            font-size: 12px; /* También más pequeño si deseas */
+            font-family: Verdana, sans-serif; /* Nueva fuente para los submenús */
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        .menu-wrapper, li ul {
+            background: yellow;
+        }
+
+        .principal-menu {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .principal-menu a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .principal-menu li:hover {
+            background: #34DA73;
+            text-shadow: 0 0 2px #000;
+        }
+
+        /* Estilo para la marquesina */
+        marquee font {
+            font-family: 'Arial Black', sans-serif; /* Aplicar la fuente a las letras de la marquesina */
+            font-size: 1.2em; /* Puedes ajustar el tamaño para que se vea bien */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="unidad-educativa">
+        <span class="verde">Unidad</span>
+        <span class="amarillo">Educativa</span>
+        <span class="rojo">Nicolás</span>
+        <span class="azul">Infante</span>
+        <span class="morado">Díaz</span>
+    </div>
+
+    <h2>PROYECTO DEL AREA TECNICA INFORMATICA DE AÑO 2025-2026</h2>
+
+    <div class="info-estudiante">
+        Samuel Velasco 3ro M
+    </div>
+
+    <div class="contenedor">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0y0_vhXackVWwdNYZQeN9gJBb8LHzjYuF7y2Fl4mEWg&s" width="10%" height="10%">
+        <img src="https://media.tenor.com/QWyZ0gl_H84AAAAM/mad-cat-fr-lol.gif" width="10%" height="10%">
+
+    </div>
+
+    <h3>
+        <marquee bgcolor="#008080">
+            <font color="black">P</font><font color="black">R</font><font color="black">O</font><font color="black">Y</font><font color="black">E</font><font color="black">C</font><font color="black">T</font><font color="black">O</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">T</font><font color="black">E</font><font color="black">C</font><font color="black">N</font><font color="black">I</font><font color="black">C</font><font color="black">O</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">I</font><font color="black">N</font><font color="black">F</font><font color="black">O</font><font color="black">R</font><font color="black">M</font><font color="black">A</font><font color="black">T</font><font color="black">I</font><font color="black">C</font><font color="black">A</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">S</font><font color="black">A</font><font color="black">M</font><font color="black">U</font><font color="black">E</font><font color="black">L</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">V</font><font color="black">E</font><font color="black">L</font><font color="black">A</font><font color="black">S</font><font color="black">C</font><font color="black">O</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">A</font><font color="black">L</font><font color="black">C</font><font color="black">I</font><font color="black">V</font><font color="black">A</font><font color="black">R</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">3</font><font color="black">r</font><font color="black">o</font>
+            <font color="black"> </font><font color="black"> </font><font color="black"> </font> <font color="black">"</font><font color="black">M</font><font color="black">"</font>
+        </marquee>
+    </h3>
+
+    <div class="menu-wrapper">
+        <ul class="principal-menu">
+            <li><a href="#">Diseño Web</a>
+                <ul class="sub-menu">
+                    <li>
+                        
+                <ul class="sub-menu">
+                    <li><a href="conceptos_trimestre1.html">TRIMESTRE 1</a></li>
+                    <li><a href="#">TRIMESTRE 2</a></li>
+                    <li><a href="#">TRIMESTRE 3</a></li>
+                </ul>
+            </li>
+                    <li><a href="#">TRIMESTRE 2</a></li>
+                    <li><a href="#">TRIMESTRE 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Soporte Técnico</a>
+                <ul class="sub-menu">
+                    <li><a href="#">TRIMESTRE 1</a></li>
+                    <li><a href="#">TRIMESTRE 2</a></li>
+                    <li><a href="#">TRIMESTRE 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sistema Operativo</a>
+                <ul class="sub-menu">
+                    <li><a href="#">TRIMESTRE 1</a></li>
+                    <li><a href="#">TRIMESTRE 2</a></li>
+                    <li><a href="#">TRIMESTRE 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Programación y Base de Datos</a>
+                <ul class="sub-menu">
+                    <li><a href="#">TRIMESTRE 1</a></li>
+                    <li><a href="#">TRIMESTRE 2</a></li>
+                    <li><a href="#">TRIMESTRE 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Aplicaciones y Ofimática</a>
+                <ul class="sub-menu">
+                    <li><a href="#">TRIMESTRE 1</a></li>
+                    <li><a href="#">TRIMESTRE 2</a></li>
+                    <li><a href="#">TRIMESTRE 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1000);
+    </script>
+
+</body>
+</html>
